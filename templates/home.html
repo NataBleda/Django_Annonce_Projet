@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    
+</head>
+<body>
+    <style>
+        .container {
+                max-width: 800px;
+                margin: 50px auto;
+                background: white;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            font-size: 16px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+   
+    <header>
+
+        
+        <h1>Home Page</h1>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Création et Hébergement du Projet</h2>
+            <p>La création du projet et toutes les étapes demandées ont été respectées avec succès. Ce projet a été conçu, développé, et hébergé selon les meilleures pratiques.</p>
+            <p>Vous pouvez consulter les détails sur le GOAT qui a réaliser ce projet dans la section <a href="{% url 'about' %}" class="btn">À propos</a>.</p>
+        </div>
+    </div>
+    <h2 style="font-size: 2em; color: #ff5733; font-weight: bold; text-transform: uppercase; letter-spacing: 2px; background-color: #fff3e0; padding: 15px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+        UN PROJET EST EN COURS DE CRÉATION, RESTEZ ATTENTIFS
+    </h2>
+    <footer>
+        <p>&copy; 2025 NataCompany. Tous droits réservés.</p>
+    </footer>
+    
+    </body>
+</html>
+{% endblock content %}

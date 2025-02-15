@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        
+        .note {
+            font-size: 12px; /* Taille de texte réduite */
+            color: #333; /* Couleur de texte sombre pour la lisibilité */
+            background-color: #fff3e0; /* Fond doux pour la note */
+            padding: 10px 15px; /* Espacement autour du texte */
+            position: fixed; /* Position fixe en haut de la page */
+            top: 0; /* Aligne la note en haut */
+            left: 0;
+            width: 100%; /* Prend toute la largeur de la page */
+            text-align: center; /* Centre le texte */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+            z-index: 1000; /* Place la note au-dessus du reste du contenu */
+        }   
+    </style>
+</head>
+<body>
+    
+    <div class="note">
+        <p>Ce site est uniquement destiné aux tests de mini-projets et d'expérimentations. Toute utilisation frauduleuse ou illégale sera sanctionnée.</p>
+    </div>
+</body>
+</html>
+
+{% block content %} {% endblock content %}
